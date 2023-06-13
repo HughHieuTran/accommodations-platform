@@ -1,6 +1,9 @@
-import Container from "./Container"
+"use client"
+
+import Container from "../Container"
 import Logo from "./Logo"
 import Search from "./Search"
+import UserMenu from "./UserMenu"
 
 interface NavbarProps {
 
@@ -21,6 +24,7 @@ const Navbar = () => {
                     ">
                         <Logo />
                         <Search />
+                        <UserMenu />
                     </div>
                 </Container>
             </div>
