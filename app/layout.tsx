@@ -1,6 +1,7 @@
 import ClientOnly from './components/ClientOnly'
 
 import RegisterModal from './components/Modal/RegisterModal'
+import ToasterProvider from './components/Provider/ToasterProvider'
 import Navbar from './components/navbar/Navbar'
 import './globals.css'
 
@@ -24,6 +25,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className} >
         <ClientOnly>
+          <ToasterProvider />
           <RegisterModal />
           <Navbar />
         </ClientOnly>
