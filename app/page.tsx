@@ -1,6 +1,15 @@
 
+import ClientOnly from "./components/ClientOnly";
+import Container from "./components/Container";
+
 export default function Home() {
   return (
-    <h1 className="text-green-400">Hello</h1>
+    <ClientOnly>
+      <Container>
+        <div>
+
+        </div>
+      </Container>
+    </ClientOnly>
   )
 }
